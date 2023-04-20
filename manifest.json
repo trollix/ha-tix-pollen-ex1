@@ -14,21 +14,96 @@
       "python_version": "3.9"
     },
     "custom_components": {
-      "switch": {
-        "name": "Example Switch",
-        "description": "A simple example switch.",
+      "sensor": {
+        "name": "Example Sensor",
+        "config_flow": false,
+        "documentation": "https://example.com/docs",
         "requirements": [],
+        "codeowners": ["@your_github_username"],
         "config": {
           "name": {
             "name": "Name",
             "required": true,
             "type": "string"
           },
-          "state": {
-            "name": "State",
+          "unit_of_measurement": {
+            "name": "Unit of Measurement",
             "required": false,
-            "type": "boolean",
-            "default": false}
+            "type": "string",
+            "default": ""
+          }
+        }
+      },
+      "binary_sensor": {
+        "name": "Example Binary Sensor",
+        "config_flow": false,
+        "documentation": "https://example.com/docs",
+        "requirements": [],
+        "codeowners": ["@your_github_username"],
+        "config": {
+          "name": {
+            "name": "Name",
+            "required": true,
+            "type": "string"
+          },
+          "device_class": {
+            "name": "Device Class",
+            "required": true,
+            "type": "string",
+            "options": [
+              "battery",
+              "cold",
+              "connectivity",
+              "door",
+              "garage_door",
+              "gas",
+              "heat",
+              "light",
+              "lock",
+              "moisture",
+              "motion",
+              "moving",
+              "occupancy",
+              "opening",
+              "plug",
+              "power",
+              "presence",
+              "problem",
+              "safety",
+              "smoke",
+              "sound",
+              "vibration",
+              "window"
+            ]
+          }
+        }
+      },
+      "climate": {
+        "name": "Example Climate",
+        "config_flow": false,
+        "documentation": "https://example.com/docs",
+        "requirements": [],
+        "codeowners": ["@your_github_username"],
+        "config": {
+          "name": {
+            "name": "Name",
+            "required": true,
+            "type": "string"
+          }
+        }
+      },
+      "light": {
+        "name": "Example Light",
+        "config_flow": false,
+        "documentation": "https://example.com/docs",
+        "requirements": [],
+        "codeowners": ["@your_github_username"],
+        "config": {
+          "name": {
+            "name": "Name",
+            "required": true,
+            "type": "string"
+          }
         }
       }
     }

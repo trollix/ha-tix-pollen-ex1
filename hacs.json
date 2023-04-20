@@ -1,0 +1,20 @@
+{
+    "name": "Example HACS Integration",
+    "render_readme": true,
+    "domain": "example_hacs_integration",
+    "version": "0.1.0",
+    "description": "An example integration for HACS",
+    "documentation": "https://github.com/yourusername/your-repository/blob/master/README.md",
+    "authors": [
+      {
+        "name": "Your Name",
+        "username": "yourusername",
+        "url": "https://yourwebsite.com"
+      }
+    ],
+    "requirements": [
+      "some-dependency==1.0.0"
+    ],
+    "codeowners": ["@yourusername"]
+  }
+  

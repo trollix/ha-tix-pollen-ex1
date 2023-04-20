@@ -1,0 +1,35 @@
+{
+    "domain": "example_hacs_integration",
+    "name": "Example HACS Integration",
+    "documentation": "https://www.example.com/docs",
+    "dependencies": [],
+    "codeowners": [],
+    "version": "1.0.0",
+    "issue_tracker": "https://www.example.com/issues",
+    "requirements": ["example-library==1.0.0"],
+    "config_flow": false,
+    "zeroconf": [],
+    "homeassistant": {
+      "version": "2022.1.0",
+      "python_version": "3.9"
+    },
+    "custom_components": {
+      "switch": {
+        "name": "Example Switch",
+        "description": "A simple example switch.",
+        "requirements": [],
+        "config": {
+          "name": {
+            "name": "Name",
+            "required": true,
+            "type": "string"
+          },
+          "state": {
+            "name": "State",
+            "required": false,
+            "type": "boolean",
+            "default": false}
+        }
+      }
+    }
+  }

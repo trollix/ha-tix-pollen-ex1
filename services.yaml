@@ -1,0 +1,12 @@
+# Example HACS Integration Services
+#
+# In this example, we define a custom service called `example_service` that takes a `message`
+# parameter and logs it to the Home Assistant log.
+
+example_service:
+  description: 'Log a message to the Home Assistant log'
+  fields:
+    message:
+      description: 'The message to log'
+      example: 'Hello, World!'
+  mode: queued
